@@ -1,16 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FormsModule } from '@angular/forms' ;
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AuthentificationComponent } from './application/authentification/authentification.component';
+import { MenuComponent } from './application/menu/menu.component';
+import { PresentationComponent } from './application/presentation/presentation.component';
+import { ErreurComponent } from './application/erreur/erreur.component';
+import { ContacterComponent } from './application/contacter/contacter.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AuthentificationComponent,
+    MenuComponent,
+    PresentationComponent,
+    ErreurComponent,
+    ContacterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
