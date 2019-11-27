@@ -1,0 +1,23 @@
+<app-menu></app-menu>
+<h3 class="text-info" >Notre Bibliothéque </h3>
+<p></p>
+
+<div class="container" >
+    <ul class="list-group" >
+        <li class="list-group-item"  *ngFor="let t of tabLivres">
+        <div  class="list-group-item list-group-item-primary">
+    
+                <img [src]="t.photo"  height="300" class="zoom">
+                <ul>
+                    <li> <p class="text-info">Identitfiant: {{t.identifiant}} </p></li>
+                    <li> <p class="text-info">Libelle: {{t.libelle}} </p></li>
+                    <li> <p class="text-info">Prix: {{t.prix}}dt </p></li>
+                </ul>
+   
+                <button class="btn btn-info" (click)="onEffacer(t.matricule)" >Effacer Livre</button>
+                <a [routerLink]="['/articles',t.identifiant,t.libelle,t.dispo]" class="c1">Plus d'Infos sur le Livre</a>
+        </div>
+ 
+        </li>
+    </ul>
+</div>

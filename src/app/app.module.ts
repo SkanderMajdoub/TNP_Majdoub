@@ -8,6 +8,8 @@ import { MenuComponent } from './application/menu/menu.component';
 import { PresentationComponent } from './application/presentation/presentation.component';
 import { ErreurComponent } from './application/erreur/erreur.component';
 import { ContacterComponent } from './application/contacter/contacter.component';
+import { ArticlesComponent } from  './application/articles/articles.component';
+import { DetailsComponent } from './application/details/details.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ContacterComponent } from './application/contacter/contacter.component'
     MenuComponent,
     PresentationComponent,
     ErreurComponent,
-    ContacterComponent
+    ContacterComponent,
+    ArticlesComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
