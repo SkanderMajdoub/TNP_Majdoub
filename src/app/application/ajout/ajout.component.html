@@ -1,0 +1,46 @@
+<app-menu></app-menu>
+<h3 class="text-info" >Ajouter un Livre </h3>
+<div >
+       
+    <div  class="list-group-item list-group-item-primary">
+    
+    <div class="form-group">
+    <p> Tapez Identifiant</p>
+    <input type="number"  class="form-control"  [(ngModel)]="identifiant"  >
+    </div>
+
+    <div class="form-group">
+    <p> Tapez Libelle</p>
+    <input type="text"  class="form-control"  [(ngModel)]="libelle"  >
+    </div>
+        
+    <div class="form-group">
+    <p> Tapez chemin de photo : ex : "../assets/2.jpg"</p>
+    <input type="text"  class="form-control"  [(ngModel)]="photo"  >
+    </div>
+
+    <div class="form-group">
+    <p> Tapez Prix</p>
+    <input type="text"  class="form-control"  [(ngModel)]="prix"  >
+    </div>
+
+    <div class="form-group">
+    <p> Tapez La date de Fabrication</p>
+    <input type="text"  class="form-control"  [(ngModel)]="datefab"  >
+    </div>
+
+    <div class="form-group">
+    <p> Disponible ou Non ?</p>
+    <input type="text"  class="form-control"  [(ngModel)]="dispo"  >
+    </div>
+
+
+
+
+    </div>
+             
+     <button class="btn btn-info" (click)="ajout()">Ajout</button>
+                      
+  
+</div>
+           

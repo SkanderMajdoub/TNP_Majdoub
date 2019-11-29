@@ -10,6 +10,7 @@ import { ErreurComponent } from './application/erreur/erreur.component';
 import { ContacterComponent } from './application/contacter/contacter.component';
 import { ArticlesComponent } from  './application/articles/articles.component';
 import { DetailsComponent } from './application/details/details.component';
+import { AjoutComponent } from './application/ajout/ajout.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DetailsComponent } from './application/details/details.component';
     ErreurComponent,
     ContacterComponent,
     ArticlesComponent,
-    DetailsComponent
+    DetailsComponent,
+    AjoutComponent
   ],
   imports: [
     BrowserModule,

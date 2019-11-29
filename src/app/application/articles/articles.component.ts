@@ -9,10 +9,19 @@ import {LivService} from '../../liv.service';
 })
 export class ArticlesComponent implements OnInit {
   tabLivres:Livres[];
+  //identifiant : number ;
   constructor(private LivService:LivService) { }
 
   ngOnInit() {
     this.tabLivres = this.LivService.tabLivres;
   }
+  onEffacer(identifiant:number)
+{
+this.tabLivres=this.LivService.Effacer(identifiant);
+}
+
+
+
+
 
 }

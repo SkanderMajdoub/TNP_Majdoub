@@ -19,6 +19,7 @@ dispo : boolean ;
     this.identifiant = this.activatedRoute.snapshot.params['identifiant'];
     this.libelle = this.activatedRoute.snapshot.params['libelle'];
     this.dispo = this.activatedRoute.snapshot.params['dispo'];
+   
   }
   onRetour()
   {

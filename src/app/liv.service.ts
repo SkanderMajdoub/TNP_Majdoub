@@ -17,5 +17,26 @@ export class LivService {
     
     ];
 
+Effacer(identifiant:number):Livres[]
+{
+for( let i=0 ;i<this.tabLivres.length; i++){
+        if(identifiant==this.tabLivres[i].identifiant)
+        {
+        this.tabLivres.splice(i,1);
+        }
+}
+return this.tabLivres;
+}
+
+
+/* fonction qui ajout un livre a la liste des livres(bibliothèque) */
+AjoutLivre(liv:Livres)
+{
+  this.tabLivres.push(liv); 
+}
+
+
+
+
   constructor() { }
 }
