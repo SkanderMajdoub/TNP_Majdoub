@@ -17,14 +17,15 @@ prix : number ;
 dispo : boolean ;
   constructor(private LivService:LivService) { }
 
+
+  /* function who takes the variables from HTML and adds them to the Livres Table" */
   ajout()
   {
   
     this.liv=new Livres(this.identifiant,this.libelle,this.photo,this.prix,new Date(),this.dispo);
     this.LivService.AjoutLivre(this.liv);
   
-
-
+alert("Livre ajouté avec succès") ;
   }
 
 

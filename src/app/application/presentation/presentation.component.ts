@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class PresentationComponent implements OnInit {
 
+  nom:string="Majdoub Skander" ;
   constructor(private lien:Router) { }
 
  
