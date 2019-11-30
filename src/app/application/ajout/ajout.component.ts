@@ -21,12 +21,17 @@ dispo : boolean ;
   /* function who takes the variables from HTML and adds them to the Livres Table" */
   ajout()
   {
-  
+   if( (isNaN(this.identifiant)==true) || (this.prix < 0))
+  alert("Confirmer Votre champs SVP ") ;
+
+  else
+  {
     this.liv=new Livres(this.identifiant,this.libelle,this.photo,this.prix,new Date(),this.dispo);
     this.LivService.AjoutLivre(this.liv);
   
-alert("Livre ajouté avec succès") ;
-  }
+alert("Livre ajouté avec succès , voir la liste des livres pour confirmer") ;
+  }  
+}
 
 
 

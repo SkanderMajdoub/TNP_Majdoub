@@ -16,7 +16,7 @@ mdp : string ;
   onVerif(auth:string,mdp:string)
 {
 
-  if(this.auth != "skander" && this.mdp != "1234")
+  if(this.auth != "appSKAN" || this.mdp != "12345")
   this.lien.navigate(['/erreur']) ;
   else
   this.lien.navigate(['/presentation']);

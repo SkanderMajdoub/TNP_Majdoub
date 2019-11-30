@@ -12,6 +12,8 @@ import { ArticlesComponent } from  './application/articles/articles.component';
 import { DetailsComponent } from './application/details/details.component';
 import { AjoutComponent } from './application/ajout/ajout.component';
 import { RealisateurPipe } from './realisateur.pipe';
+import { RechercherComponent } from './application/rechercher/rechercher.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { RealisateurPipe } from './realisateur.pipe';
     ArticlesComponent,
     DetailsComponent,
     AjoutComponent,
-    RealisateurPipe
+    RealisateurPipe,
+    RechercherComponent,
+    
   ],
   imports: [
     BrowserModule,

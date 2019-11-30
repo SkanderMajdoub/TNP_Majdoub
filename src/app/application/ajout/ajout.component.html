@@ -6,8 +6,10 @@
     
     <div class="form-group">
     <p> Tapez Identifiant</p>
-    <input type="number"  class="form-control"  [(ngModel)]="identifiant"  >
+    <input type="string"  class="form-control"   [(ngModel)]="identifiant"   >
     </div>
+   
+
 
     <div class="form-group">
     <p> Tapez Libelle</p>
@@ -31,7 +33,11 @@
 
     <div class="form-group">
     <p> Disponible ou Non ?</p>
-    <input type="text"  class="form-control"  [(ngModel)]="dispo"  >
+    <select  [(ngModel)]="dispo">
+
+<option value=true > TRUE</option>
+<option value=false>FALSE</option>
+    </select>
     </div>
 
 
@@ -41,6 +47,6 @@
              
      <button class="btn btn-info" (click)="ajout()">Ajout</button>
                       
-  
+        
 </div>
            
