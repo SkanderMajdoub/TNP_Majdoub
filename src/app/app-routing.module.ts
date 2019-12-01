@@ -9,6 +9,8 @@ import { ArticlesComponent } from  './application/articles/articles.component';
 import { DetailsComponent } from './application/details/details.component';
 import { AjoutComponent } from './application/ajout/ajout.component';
 import { RechercherComponent } from './application/rechercher/rechercher.component';
+import { ModifierComponent } from './application/modifier/modifier.component';
+
 const routes: Routes = [
   {path :'menu',component:MenuComponent},
   {path:'authentification', component:AuthentificationComponent},
@@ -19,6 +21,7 @@ const routes: Routes = [
   {path: 'articles/:identifiant/:libelle/:dispo/:prix' , component:DetailsComponent},
   {path: 'ajout',component:AjoutComponent},
   {path: 'rechercher',component:RechercherComponent},
+  {path : 'modifer',component:ModifierComponent},
   {path:'', redirectTo:'authentification', pathMatch:'full'}
   
 ];

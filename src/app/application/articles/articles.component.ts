@@ -9,6 +9,9 @@ import {LivService} from '../../liv.service';
 })
 export class ArticlesComponent implements OnInit {
   tabLivres:Livres[];
+  id : number ;
+  favoris=[]  ;
+
   //identifiant : number ;
   constructor(private LivService:LivService) { }
 
@@ -22,6 +25,10 @@ this.tabLivres=this.LivService.Effacer(identifiant);
 
 
 
+onFavoris(libelle:string)
+{
 
+this.favoris[this.favoris.length]=libelle ;
+}
 
 }

@@ -35,6 +35,27 @@ AjoutLivre(liv:Livres)
   this.tabLivres.push(liv); 
 }
 
+getid(identifiant : number):Livres
+{
+for( let i=0;i<this.tabLivres.length;i++)
+{
+if(identifiant==this.tabLivres[i].identifiant)
+return this.tabLivres[i];
+}
+return null;
+}
+
+Modifier(identifiant:number,identif:number,libelle:String,photo:String,prix:number,datefab:Date,dispo:boolean)
+{
+let liv:Livres=this.getid(identifiant);
+liv.identifiant=identif;
+liv.libelle=libelle;
+liv.photo=photo;
+liv.prix=prix;
+liv.datefab = new Date() ;
+liv.dispo=dispo;
+}
+
 
 
 

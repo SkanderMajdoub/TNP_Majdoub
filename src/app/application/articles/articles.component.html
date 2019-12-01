@@ -1,5 +1,10 @@
 <app-menu></app-menu>
-<h3 class="text-info" >Notre Bibliothéque </h3>
+<div><h3 class="text-info" >Notre Bibliothéque </h3>
+<p class="text-info" >Liste des Livres Favoris :</p> 
+<select >
+    <option *ngFor="let f of favoris">{{f}}</option>
+</select>
+</div>
 <p></p>
 
 <div >
@@ -11,10 +16,11 @@
                 <div>
                      <p class="card bg-warning">Identitfiant: {{t.identifiant}} </p>
                      <p class="card bg-warning">Libelle: {{t.libelle}} </p>
-                     <p class="card bg-warning">Prix: {{t.prix}}dt </p>
+                     <p class="card bg-warning">Prix: {{t.prix|currency}} </p>
                 </div>
-   
+                
                 <button class="btn btn-success" (click)="onEffacer(t.identifiant)" >Effacer Livre</button>
+                <button class="btn btn-info" (click)="onFavoris(t.libelle)" >Ajouter au Favoris</button>
                 <a [routerLink]="['/articles',t.identifiant,t.libelle,t.dispo,t.prix]" class="c1" >Plus d'Infos sur le Livre</a>
         </div>
  

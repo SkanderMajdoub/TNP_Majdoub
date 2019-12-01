@@ -1,0 +1,55 @@
+<app-menu></app-menu>
+<h3 class="text-info" >Modifier un Livre </h3>
+
+<div>
+  <div  class="list-group-item list-group-item-primary">
+
+    <div class="form-group">Selectionner l'identifiant du livre pour le modifer
+        <select [(ngModel)]="identifiant" >
+            <option *ngFor="let t of tabLivres">{{t.identifiant}}</option>
+        </select>
+   </div>
+  
+   <div class="form-group">
+        <p> Tapez Nouveau Identifiant</p>
+        <input type="text"  class="form-control"   [(ngModel)]="identif">
+    </div>
+
+    <div class="form-group">
+            <p> Tapez Nouvelle Libelle</p>
+            <input type="text"  class="form-control"  [(ngModel)]="libelle"  >
+    </div>
+
+
+    <div class="form-group">
+            <p> Tapez Nouveau chemin de photo : ex : "../assets/2.jpg"</p>
+            <input type="text"  class="form-control"  [(ngModel)]="photo"  >
+    </div>
+
+
+    <div class="form-group">
+            <p> Tapez Nouveau Prix</p>
+            <input type="text"  class="form-control"  [(ngModel)]="prix"  >
+    </div>
+
+    <div class="form-group">
+            <p> Tapez La Nouvelle date de Fabrication</p>
+            <input type="text"  class="form-control"  [(ngModel)]="datefab"  >
+    </div>
+
+
+    <div class="form-group">
+        <p> Disponible ou Non ?</p>
+            <select  [(ngModel)]="dispo">
+                <option value=true > TRUE</option>
+                <option value=false>FALSE</option>
+            </select>
+    </div>
+
+    <button class="btn btn-info" (click)="Modif()">Modifier</button>
+</div>
+
+
+
+
+</div>

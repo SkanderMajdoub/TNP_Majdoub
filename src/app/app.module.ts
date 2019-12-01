@@ -13,6 +13,7 @@ import { DetailsComponent } from './application/details/details.component';
 import { AjoutComponent } from './application/ajout/ajout.component';
 import { RealisateurPipe } from './realisateur.pipe';
 import { RechercherComponent } from './application/rechercher/rechercher.component';
+import { ModifierComponent } from './application/modifier/modifier.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { RechercherComponent } from './application/rechercher/rechercher.compone
     AjoutComponent,
     RealisateurPipe,
     RechercherComponent,
+    ModifierComponent,
     
   ],
   imports: [
