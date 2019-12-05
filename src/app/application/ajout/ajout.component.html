@@ -1,52 +1,53 @@
 <app-menu></app-menu>
 <h3 class="text-info" >Ajouter un Livre </h3>
+
 <div >
-       
+    <form #f="ngForm"  (ngSubmit)="onSubmit(f)">
     <div  class="list-group-item list-group-item-primary">
-    
+       
     <div class="form-group">
     <p> Tapez Identifiant</p>
-    <input type="string"  class="form-control"   [(ngModel)]="identifiant"   >
+    <input type="string"  class="form-control" name="id"  [(ngModel)]="identifiant" required  >
     </div>
    
 
 
     <div class="form-group">
     <p> Tapez Libelle</p>
-    <input type="text"  class="form-control"  [(ngModel)]="libelle"  >
+    <input type="text"  class="form-control"  name="lib" [(ngModel)]="libelle" required >
     </div>
         
     <div class="form-group">
     <p> Tapez chemin de photo : ex : "../assets/2.jpg"</p>
-    <input type="text"  class="form-control"  [(ngModel)]="photo"  >
+    <input type="text"  class="form-control"  [(ngModel)]="photo" name="ph" required >
     </div>
 
     <div class="form-group">
     <p> Tapez Prix</p>
-    <input type="text"  class="form-control"  [(ngModel)]="prix"  >
+    <input type="text"  class="form-control"  [(ngModel)]="prix" name="prx" required >
     </div>
 
     <div class="form-group">
     <p> Tapez La date de Fabrication</p>
-    <input type="text"  class="form-control"  [(ngModel)]="datefab"  >
+    <input type="text"  class="form-control"  [(ngModel)]="datefab" name="df" >
     </div>
 
     <div class="form-group">
     <p> Disponible ou Non ?</p>
-    <select  [(ngModel)]="dispo">
+    <select  [(ngModel)]="dispo" name="ds" required>
 
-<option value=true > TRUE</option>
+<option value=true> TRUE </option>
 <option value=false>FALSE</option>
     </select>
     </div>
 
 
 
-
+    <button class="btn btn-info" [disabled]="f.invalid">Ajout</button>
+     <button class="btn btn-danger" type="reset">Vider</button> 
     </div>
              
-     <button class="btn btn-info" (click)="ajout()">Ajout</button>
+</form>
                       
         
 </div>
-           
