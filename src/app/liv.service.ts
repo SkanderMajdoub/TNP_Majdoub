@@ -45,10 +45,9 @@ return this.tabLivres[i];
 return null;
 }
 
-Modifier(identifiant:number,identif:number,libelle:String,photo:String,prix:number,datefab:Date,dispo:boolean)
+Modifier(identifiant:number,libelle:String,photo:String,prix:number,datefab:Date,dispo:boolean)
 {
 let liv:Livres=this.getid(identifiant);
-liv.identifiant=identif;
 liv.libelle=libelle;
 liv.photo=photo;
 liv.prix=prix;
