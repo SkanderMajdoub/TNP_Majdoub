@@ -2,7 +2,6 @@ export class Livres
 {
     _identifiant: number;
     _libelle:String;
- 
     _photo:String;
     _prix: number;
     _datefab: Date;
@@ -79,11 +78,5 @@ export class Livres
       }
     
     
-
-
-
-
-
-
 
 }   
